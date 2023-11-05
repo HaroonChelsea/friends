@@ -30,5 +30,8 @@
     <%= form.label :twitter, class: "form-label" %>
     <%= form.text_field :twitter, class:"form-control" %>
   </div>
+  <div class="mb-3">
+    <%= form.text_field :user_id, id: :friend_user_id, value: current_user.id, type: :hidden %>
+  </div>
   <%= form.submit class:"btn btn-primary" %>
 <% end %>
